@@ -3,6 +3,7 @@
   "name": "Voltalis",
   "codeowners": ["@ppaglier"],
   "config_flow": true,
+  "dependencies": ["frontend", "http"],
   "documentation": "https://github.com/ppaglier/voltalis-homeassistant",
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/ppaglier/voltalis-homeassistant/issues",

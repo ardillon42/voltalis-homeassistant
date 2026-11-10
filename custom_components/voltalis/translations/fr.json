@@ -50,7 +50,8 @@
           "default_away_temp": "Température par défaut en mode absence/hors-gel",
           "default_eco_temp": "Température par défaut en mode éco",
           "default_comfort_temp": "Température par défaut en mode confort",
-          "default_water_heater_temp": "Température par défaut pour le chauffe-eau"
+          "default_water_heater_temp": "Température par défaut pour le chauffe-eau",
+          "enable_panel": "Activer le panneau dans la barre latérale"
         },
         "data_description": {
           "log_level": "Niveau de verbosité des logs de l'intégration.",
@@ -60,7 +61,8 @@
           "default_away_temp": "Température cible par défaut utilisée en mode absence/hors-gel (Celsius).",
           "default_eco_temp": "Température cible par défaut utilisée en mode éco (Celsius).",
           "default_comfort_temp": "Température cible par défaut utilisée en mode confort (Celsius).",
-          "default_water_heater_temp": "Température cible par défaut pour le chauffe-eau (Celsius)."
+          "default_water_heater_temp": "Température cible par défaut pour le chauffe-eau (Celsius).",
+          "enable_panel": "Affiche un panneau dédié à la gestion des radiateurs Voltalis dans la barre latérale gauche."
         }
       }
     }
@@ -213,6 +215,33 @@
           "name": "Durée (heures)",
           "description": "Combien de temps booster le chauffage (en heures). La valeur par défaut est 2 heures."
         }
+      }
+    }
+  },
+  "panel": {
+    "heaters": {
+      "title": "Mes Radiateurs Voltalis",
+      "devices_count": "{count} appareil(s)",
+      "empty": "Aucun radiateur Voltalis détecté.",
+      "loading": "Chargement des données...",
+      "power": "Alimentation",
+      "target_temperature": "Consigne cible",
+      "daily_consumption": "Conso. du jour",
+      "current_mode": "Mode actuel",
+      "connection_status": "Statut de connexion",
+      "more_info": "Afficher les détails",
+      "presets": {
+        "comfort": "Confort",
+        "eco": "Éco",
+        "away": "Hors-gel"
+      },
+      "connection": {
+        "connected": "Connecté",
+        "disconnected": "Déconnecté",
+        "test_in_progress": "Test en cours",
+        "no_consumption": "Sans conso",
+        "comm_error": "Erreur de communication",
+        "unknown": "Inconnu"
       }
     }
   }

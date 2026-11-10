@@ -25,6 +25,8 @@ CONF_DEFAULT_AWAY_TEMP = "default_away_temp"
 CONF_DEFAULT_ECO_TEMP = "default_eco_temp"
 CONF_DEFAULT_COMFORT_TEMP = "default_comfort_temp"
 CONF_DEFAULT_WATER_HEATER_TEMP = "default_water_heater_temp"
+CONF_ENABLE_PANEL = "enable_panel"
+DEFAULT_ENABLE_PANEL = True
 
 
 class LogLevelEnum(StrEnum):

@@ -16,12 +16,14 @@ from custom_components.voltalis.const import (
     CONF_DEFAULT_ECO_TEMP,
     CONF_DEFAULT_TEMP,
     CONF_DEFAULT_WATER_HEATER_TEMP,
+    CONF_ENABLE_PANEL,
     CONF_LOG_LEVEL,
     DEFAULT_AWAY_TEMP,
     DEFAULT_CLIMATE_MAX_TEMP,
     DEFAULT_CLIMATE_MIN_TEMP,
     DEFAULT_COMFORT_TEMP,
     DEFAULT_ECO_TEMP,
+    DEFAULT_ENABLE_PANEL,
     DEFAULT_LOG_LEVEL,
     DEFAULT_TEMP,
     DEFAULT_WATER_HEATER_TEMP,
@@ -278,6 +280,11 @@ class VoltalisOptionsFlowHandler(config_entries.OptionsFlow):
                     CONF_DEFAULT_WATER_HEATER_TEMP,
                     default=self._config_entry.options.get(CONF_DEFAULT_WATER_HEATER_TEMP, DEFAULT_WATER_HEATER_TEMP),
                 ): vol.Coerce(float),
+                # Sidebar panel option
+                vol.Optional(
+                    CONF_ENABLE_PANEL,
+                    default=self._config_entry.options.get(CONF_ENABLE_PANEL, DEFAULT_ENABLE_PANEL),
+                ): bool,
             }
         )
 
